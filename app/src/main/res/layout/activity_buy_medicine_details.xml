@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".BuyMedicineDetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewBMPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="501dp"
+        android:text="24*7 Healthcare"
+        android:textColor="#D468E6"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBMDTotalCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBMTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Location:Madurai"
+        android:textColor="#FAF6F6"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMPackageName"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/textViewBMDPackageName"
+        android:layout_width="248dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="581dp"
+        android:text="Buy Medicines"
+        android:textColor="#ECD511"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewBMPackageName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMPackageName"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <EditText
+        android:id="@+id/editTextBMDTextMultiLine"
+        android:layout_width="299dp"
+        android:layout_height="342dp"
+        android:layout_marginTop="48dp"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:text="Hi \nHello"
+        android:textColor="#FAF6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDPackageName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="291dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textColor="#FFC107"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBMDAddToCart"
+        app:layout_constraintEnd_toEndOf="@+id/editTextBMDTextMultiLine"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextBMDTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMPackageName" />
+
+    <Button
+        android:id="@+id/buttonBMDAddToCart"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:text="Add To Cart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBMDBack"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBMDBack"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonBMDBack"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTotalCost" />
+
+    <Button
+        android:id="@+id/buttonBMDBack"
+        android:layout_width="205dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="11dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBMDAddToCart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

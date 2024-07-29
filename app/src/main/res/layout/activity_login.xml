@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="368dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="60dp"
+        android:text="24*7 Healthcare"
+        android:textColor="#D468E6"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBMBTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBMBTitle"
+        android:layout_width="259dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="49dp"
+        android:text="Login"
+        android:textColor="#F1F3F4"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBMBFullName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextBMBFullName"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextBMBFullName"
+        android:layout_width="302dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#F3F6F3"
+        android:textColorHighlight="#F6EFEF"
+        android:textColorHint="#ECF3EC"
+        android:textColorLink="#F3EDED"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLoginPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMBTitle" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/input_bg"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNewuser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
+
+    <TextView
+        android:id="@+id/textViewNewuser"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="136dp"
+        android:text="Register for new user"
+        android:textColor="#FAFAFA"
+        android:textColorHighlight="#F3EFEF"
+        android:textColorHint="#FAF6F6"
+        android:textColorLink="#F8F2F2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="326dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FBF8F8"
+        android:textColorHighlight="#FBF7F7"
+        android:textColorHint="#EFF3F0"
+        android:textColorLink="#F1EBEB"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBFullName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
