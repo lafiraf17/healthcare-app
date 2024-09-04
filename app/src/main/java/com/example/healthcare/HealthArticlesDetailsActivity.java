@@ -1,7 +1,5 @@
 package com.example.healthcare;
 
-import static android.os.Build.VERSION_CODES.R;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,12 +12,14 @@ import android.widget.TextView;
 public class HealthArticlesDetailsActivity extends AppCompatActivity {
     TextView tv1;
     ImageView img;
-    Button btnBack = findViewById(R.id.buttonHADback);
+    Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_articles_details);
+
+        btnBack = findViewById(R.id.buttonHADback);
         tv1 = findViewById(R.id.textViewHADtitle);
         img = findViewById(R.id.imageViewHAD);
 

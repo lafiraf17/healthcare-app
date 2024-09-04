@@ -1,7 +1,5 @@
 package com.example.healthcare;
 
-import static android.os.Build.VERSION_CODES.R;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
